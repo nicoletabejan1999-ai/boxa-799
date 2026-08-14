@@ -1,10 +1,3 @@
-// Mobile nav toggle
-const navToggle = document.getElementById('navToggle');
-const nav = document.getElementById('nav');
-navToggle?.addEventListener('click', () => {
-  nav.classList.toggle('nav--open');
-});
-
 // Gallery thumbnails
 const mainImg = document.getElementById('mainProductImg');
 document.querySelectorAll('.thumb').forEach((thumb) => {
