@@ -300,6 +300,9 @@ a { color: inherit; text-decoration: none; }
 }
 .hero__main-img img { max-height: 460px; width: auto; margin: 0 auto; }
 
+.hero__main-img--video { padding: 12px; }
+.hero__main-img--video video { width: 100%; height: auto; border-radius: var(--radius-md); }
+
 @keyframes rgbGlow {
   0%   { box-shadow: 0 0 34px 2px rgba(59, 130, 246, 0.35); }
   25%  { box-shadow: 0 0 34px 2px rgba(217, 70, 239, 0.35); }
