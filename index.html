@@ -93,10 +93,18 @@
   <symbol id="icon-play" viewBox="0 0 24 24" fill="currentColor" stroke="none">
     <polygon points="6 3 21 12 6 21"/>
   </symbol>
+  <symbol id="icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="9"/>
+    <polyline points="12 7 12 12 16 14"/>
+  </symbol>
+  <symbol id="icon-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="4" y="11" width="16" height="9" rx="2"/>
+    <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+  </symbol>
 </svg>
 
 <div class="promo-bar">
-  <p><svg class="icon icon--inline" aria-hidden="true"><use href="#icon-truck"></use></svg> Livrare în toată Moldova &nbsp;|&nbsp; <svg class="icon icon--inline" aria-hidden="true"><use href="#icon-cash"></use></svg> Plată la primire</p>
+  <p><svg class="icon icon--inline" aria-hidden="true"><use href="#icon-truck"></use></svg> Livrare în toată Moldova &nbsp;|&nbsp; Ofertă limitată &nbsp;|&nbsp; <svg class="icon icon--inline" aria-hidden="true"><use href="#icon-cash"></use></svg> Plată la primire</p>
 </div>
 
 <main id="top">
@@ -104,201 +112,95 @@
   <!-- HERO -->
   <section class="hero" id="produs">
     <div class="container hero__grid">
-      <div class="hero__gallery">
+      <div class="hero__info">
+        <p class="hero__tag">Boxă wireless · ZQS6239XW</p>
+        <h1>Petrecere în curte,<br><span class="hero__gradient">karaoke</span><br>acasă</h1>
+        <p class="hero__subtitle">Difuzoare duble, microfon wireless inclus și lumini LED RGB — tot ce ai nevoie într-o singură boxă.</p>
+
+        <div class="offer-card">
+          <p class="offer-card__label"><svg class="icon icon--inline" aria-hidden="true"><use href="#icon-clock"></use></svg> Această ofertă se încheie în:</p>
+          <div class="countdown" data-countdown>
+            <div class="countdown__unit"><span data-cd-hours>06</span><small>ore</small></div>
+            <div class="countdown__unit"><span data-cd-minutes>00</span><small>min</small></div>
+            <div class="countdown__unit"><span data-cd-seconds>00</span><small>sec</small></div>
+          </div>
+
+          <div class="price-box">
+            <div class="price-box__old">2796 lei</div>
+            <div class="price-box__now">799 <span>lei</span></div>
+          </div>
+          <div class="price-box__save">Economisești 1997 lei (-71%)</div>
+
+          <ul class="hero__checks">
+            <li><span class="icon-check"><svg class="icon"><use href="#icon-check"></use></svg></span> Putere reală 40W</li>
+            <li><span class="icon-check"><svg class="icon"><use href="#icon-check"></use></svg></span> Bluetooth 5.3, USB, card TF și radio FM</li>
+            <li><span class="icon-check"><svg class="icon"><use href="#icon-check"></use></svg></span> Baterie încorporată, reîncărcabilă</li>
+            <li><span class="icon-check"><svg class="icon"><use href="#icon-check"></use></svg></span> Microfon wireless inclus — karaoke instant</li>
+            <li><span class="icon-check"><svg class="icon"><use href="#icon-check"></use></svg></span> Lumini LED RGB multicolore</li>
+            <li><span class="icon-check"><svg class="icon"><use href="#icon-check"></use></svg></span> Livrare în toată Moldova, plată la primire</li>
+          </ul>
+
+          <a href="#comanda" class="btn btn--primary btn--lg btn--block">Comandă acum</a>
+          <p class="offer-card__note"><svg class="icon icon--inline" aria-hidden="true"><use href="#icon-zap"></use></svg> Stoc limitat la acest preț</p>
+        </div>
+      </div>
+
+      <div class="hero__media">
         <div class="hero__badge">-71%</div>
         <div class="hero__main-img">
-          <img src="images/hero-produs.jpg" alt="Boxă Bluetooth de petrecere cu microfon wireless și cutie originală" id="mainProductImg">
-        </div>
-        <div class="hero__thumbs">
-          <button class="thumb active" data-full="images/hero-produs.jpg">
-            <img src="images/hero-produs.jpg" alt="Boxă cu cutie și microfon">
-          </button>
-          <button class="thumb" data-full="images/fata-spate.jpg">
-            <img src="images/fata-spate.jpg" alt="Boxă vedere față și spate">
-          </button>
-          <button class="thumb thumb--frame" data-full="">
-            <svg class="icon" aria-hidden="true"><use href="#icon-camera"></use></svg>
-          </button>
-          <button class="thumb thumb--frame" data-full="">
-            <svg class="icon" aria-hidden="true"><use href="#icon-camera"></use></svg>
-          </button>
-        </div>
-      </div>
-
-      <div class="hero__info">
-        <p class="eyebrow">Boxă audio portabilă</p>
-        <h1>Boxă Bluetooth de Petrecere cu Microfon Wireless</h1>
-        <div class="led-strip" aria-hidden="true"></div>
-        <p class="hero__subtitle">Sunet puternic de 40W, lumini LED RGB pe tot ritmul și microfon wireless inclus — boxa perfectă pentru petreceri, karaoke și evenimente în aer liber.</p>
-
-        <div class="rating">
-          <span class="stars" aria-hidden="true">
-            <svg class="icon"><use href="#icon-star"></use></svg>
-            <svg class="icon"><use href="#icon-star"></use></svg>
-            <svg class="icon"><use href="#icon-star"></use></svg>
-            <svg class="icon"><use href="#icon-star"></use></svg>
-            <svg class="icon"><use href="#icon-star"></use></svg>
-          </span>
-          <span class="rating__text">Recomandată pentru petreceri și karaoke</span>
-        </div>
-
-        <div class="price-box">
-          <div class="price-box__now">799 <span>lei</span></div>
-          <div class="price-box__old">2796 lei</div>
-          <div class="price-box__save">Economisești 1997 lei</div>
-        </div>
-
-        <ul class="hero__checks">
-          <li><span class="icon-check"><svg class="icon"><use href="#icon-check"></use></svg></span> Livrare în toată Moldova</li>
-          <li><span class="icon-check"><svg class="icon"><use href="#icon-check"></use></svg></span> Plată la primire — plătești la livrare</li>
-          <li><span class="icon-check"><svg class="icon"><use href="#icon-check"></use></svg></span> Microfon wireless inclus în pachet</li>
-          <li><span class="icon-check"><svg class="icon"><use href="#icon-check"></use></svg></span> Garanție și retur ușor</li>
-        </ul>
-
-        <div class="hero__cta">
-          <a href="#comanda" class="btn btn--primary btn--lg">Comandă acum — 799 lei</a>
-          <p class="hero__stock"><svg class="icon icon--inline" aria-hidden="true"><use href="#icon-zap"></use></svg> Stoc limitat la prețul redus</p>
+          <img src="images/hero-produs.jpg" alt="Boxă Bluetooth de petrecere cu microfon wireless și cutie originală">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- USP STRIP -->
-  <section class="usp">
-    <div class="container usp__row">
-      <div class="usp__item">
-        <span class="usp__icon"><svg class="icon"><use href="#icon-truck"></use></svg></span>
-        <div>
-          <strong>Livrare în toată Moldova</strong>
-          <p>1-3 zile lucrătoare</p>
-        </div>
-      </div>
-      <div class="usp__item">
-        <span class="usp__icon"><svg class="icon"><use href="#icon-cash"></use></svg></span>
-        <div>
-          <strong>Plată la primire</strong>
-          <p>Plătești comod, la primirea coletului</p>
-        </div>
-      </div>
-      <div class="usp__item">
-        <span class="usp__icon"><svg class="icon"><use href="#icon-shield"></use></svg></span>
-        <div>
-          <strong>Garanție inclusă</strong>
-          <p>Produs verificat și garantat</p>
-        </div>
-      </div>
-      <div class="usp__item">
-        <span class="usp__icon"><svg class="icon"><use href="#icon-return"></use></svg></span>
-        <div>
-          <strong>Retur ușor</strong>
-          <p>Schimb sau retur fără bătăi de cap</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FEATURES -->
-  <section class="features" id="caracteristici">
+  <!-- WHY THIS SPEAKER -->
+  <section class="why" id="caracteristici">
     <div class="container">
-      <p class="section-eyebrow">De ce să o alegi</p>
-      <h2 class="section-title">Făcută pentru distracție, oriunde ai duce-o</h2>
+      <p class="section-eyebrow">De ce merită</p>
+      <h2 class="section-title section-title--left">De ce această boxă?</h2>
 
-      <div class="highlights">
-        <article class="highlight-card">
-          <div class="highlight-card__media">
-            <img src="images/sunet-hd.jpg" alt="Doar boxele bune au sunet bun — bas puternic și sunet înalt strălucitor">
+      <div class="why__grid">
+        <article class="why-card">
+          <div class="why-card__media why-card__media--contain">
+            <img src="images/boxa-petrecere-features.jpg" alt="Boxă pentru petrecere cu BT 5.3, radio FM, redare USB, card T-flash, baterie încorporată și microfon wireless inclus">
           </div>
-          <div class="highlight-card__body">
-            <h3>Putere 40W, sunet HD</h3>
-            <p>Bas puternic și sunet înalt strălucitor, pentru o experiență auditivă excelentă.</p>
-          </div>
-        </article>
-        <article class="highlight-card">
-          <div class="highlight-card__media">
-            <img src="images/bluetooth-conectivitate.jpg" alt="Conectivitate Bluetooth, microfon wireless și cablu de încărcare incluse">
-          </div>
-          <div class="highlight-card__body">
-            <h3>Bluetooth 5.3</h3>
-            <p>Conectare rapidă și stabilă cu telefonul sau laptopul, fără cabluri.</p>
+          <div class="why-card__body">
+            <span class="why-card__tag">BT 5.3</span>
+            <h3>Toate conexiunile, într-un loc</h3>
+            <p>Bluetooth 5.3, radio FM, redare USB și card T-flash — alegi tu cum asculți muzica.</p>
           </div>
         </article>
-        <article class="highlight-card">
-          <div class="highlight-card__media">
-            <img src="images/led-rgb-reglabil.jpg" alt="LED colorat reglabil cu bandă luminoasă RGB și efect de șoc 3D">
+        <article class="why-card">
+          <div class="why-card__media why-card__media--contain">
+            <img src="images/panou-control.jpg" alt="Panoul de control al boxei: USB/TF, port încărcare, pornit/oprit, comutare mod, control volum și LED RGB">
           </div>
-          <div class="highlight-card__body">
-            <h3>Lumini LED RGB reglabile</h3>
-            <p>Bandă luminoasă cu schimbare de culoare și efect 3D, pentru atmosferă de petrecere.</p>
+          <div class="why-card__body">
+            <span class="why-card__tag">Simplu</span>
+            <h3>Pornești și cânți</h3>
+            <p>Comenzi clare pe panoul de sus: volum, mod, redare și lumini RGB, toate la vedere.</p>
           </div>
         </article>
-        <article class="highlight-card">
-          <div class="highlight-card__media">
+        <article class="why-card">
+          <div class="why-card__media why-card__media--contain">
             <img src="images/baterie-capacitate.jpg" alt="Baterie încorporată de mare capacitate, suportă încărcare în timpul difuzării">
           </div>
-          <div class="highlight-card__body">
-            <h3>Baterie de mare capacitate</h3>
-            <p>Ascultă ore în șir la o singură încărcare; suportă încărcare în timpul redării.</p>
+          <div class="why-card__body">
+            <span class="why-card__tag">Fără fir</span>
+            <h3>Muzică oriunde, fără priză</h3>
+            <p>Baterie încorporată, reîncărcabilă — gata de acțiune după 3–5 ore de încărcare.</p>
           </div>
         </article>
-        <article class="highlight-card">
-          <div class="highlight-card__media">
+        <article class="why-card">
+          <div class="why-card__media why-card__media--contain">
             <img src="images/dimensiuni.jpg" alt="Dimensiuni boxă: 21 cm lățime, 19,6 cm adâncime, 50 cm înălțime">
           </div>
-          <div class="highlight-card__body">
-            <h3>Compactă și portabilă</h3>
-            <p>50 cm înălțime, 21 cm lățime, 19,6 cm adâncime și doar 2,2 kg — ușor de transportat.</p>
+          <div class="why-card__body">
+            <span class="why-card__tag">2,2 kg</span>
+            <h3>O duci cu o mână</h3>
+            <p>50 × 21 × 19,6 cm și doar 2,2 kg — o iei cu tine la orice ieșire.</p>
           </div>
         </article>
-      </div>
-
-      <div class="features__grid features__grid--compact">
-        <article class="feature-card">
-          <span class="feature-card__icon"><svg class="icon"><use href="#icon-mic"></use></svg></span>
-          <h3>Microfon wireless inclus</h3>
-          <p>Vine cu un microfon fără fir, gata pentru karaoke și discursuri.</p>
-        </article>
-        <article class="feature-card">
-          <span class="feature-card__icon"><svg class="icon"><use href="#icon-radio"></use></svg></span>
-          <h3>Radio FM, USB &amp; card TF</h3>
-          <p>Redă muzică direct de pe stick USB, card de memorie sau prin radio FM.</p>
-        </article>
-        <article class="feature-card">
-          <span class="feature-card__icon"><svg class="icon"><use href="#icon-sliders"></use></svg></span>
-          <h3>Comenzi simple</h3>
-          <p>Buton de mod, volum, redare/pauză și lumini RGB, toate la îndemână pe panoul de sus.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- GALLERY / MARKETING VISUALS -->
-  <section class="showcase" id="galerie">
-    <div class="container">
-      <p class="section-eyebrow">Galerie</p>
-      <h2 class="section-title">Fiecare detaliu, gândit pentru petrecere</h2>
-
-      <div class="showcase__grid">
-        <figure class="showcase__item showcase__item--wide showcase__item--contain">
-          <img src="images/boxa-petrecere-features.jpg" alt="Boxă pentru petrecere cu BT 5.3, radio FM, redare USB, card T-flash, baterie încorporată și microfon wireless inclus">
-        </figure>
-        <figure class="showcase__item showcase__item--contain">
-          <img src="images/panou-control.jpg" alt="Panoul de control al boxei: USB/TF, port încărcare, pornit/oprit, comutare mod, control volum și LED RGB">
-        </figure>
-        <figure class="showcase__item">
-          <img src="images/fata-spate.jpg" alt="Boxă vedere din față cu panou de comandă și vedere din spate">
-        </figure>
-        <figure class="showcase__item showcase__item--frame">
-          <svg class="icon frame__icon" aria-hidden="true"><use href="#icon-camera"></use></svg>
-          <figcaption>Imagine lifestyle — în curând</figcaption>
-        </figure>
-        <figure class="showcase__item showcase__item--frame">
-          <svg class="icon frame__icon" aria-hidden="true"><use href="#icon-camera"></use></svg>
-          <figcaption>Imagine unboxing — în curând</figcaption>
-        </figure>
-        <figure class="showcase__item showcase__item--frame">
-          <svg class="icon frame__icon" aria-hidden="true"><use href="#icon-camera"></use></svg>
-          <figcaption>Imagine microfon wireless — în curând</figcaption>
-        </figure>
       </div>
     </div>
   </section>
@@ -306,8 +208,8 @@
   <!-- VIDEO -->
   <section class="video-section">
     <div class="container">
-      <p class="section-eyebrow">Vezi boxa în acțiune</p>
-      <h2 class="section-title">Video prezentare produs</h2>
+      <p class="section-eyebrow">Video</p>
+      <h2 class="section-title">Vezi boxa în acțiune</h2>
       <div class="video-frame">
         <div class="video-frame__inner">
           <span class="video-frame__play"><svg class="icon"><use href="#icon-play"></use></svg></span>
@@ -317,20 +219,35 @@
     </div>
   </section>
 
+  <!-- SOUND DESCRIPTION -->
+  <section class="description">
+    <div class="container description__grid">
+      <div class="description__text">
+        <p class="section-eyebrow section-eyebrow--left">Descriere</p>
+        <h2 class="section-title section-title--left">Ce sunet are</h2>
+        <p>Boxă cu difuzoare duble și putere reală de 40W — sunet clar și bas puternic, suficient pentru curte, terasă sau o cameră mare.</p>
+        <p>Vine cu <strong>microfon wireless inclus</strong>, gata de karaoke din prima secundă, și cu <strong>lumini LED RGB</strong> care creează atmosferă fără niciun efort suplimentar.</p>
+        <p>Bluetooth 5.3 pentru conectare rapidă și stabilă, plus redare de pe USB, card T-flash sau radio FM — alegi tu cum asculți.</p>
+        <a href="#comanda" class="btn btn--primary btn--lg">Comandă acum</a>
+      </div>
+      <div class="description__media">
+        <img src="images/sunet-hd.jpg" alt="Doar boxele bune au sunet bun — bas puternic și sunet înalt strălucitor">
+      </div>
+    </div>
+  </section>
+
   <!-- SPECS -->
   <section class="specs" id="specificatii">
     <div class="container specs__grid">
-      <div class="specs__intro">
-        <p class="section-eyebrow">Specificații</p>
-        <h2 class="section-title">Detalii tehnice</h2>
-        <p>Toate specificațiile importante ale boxei, într-un singur loc, pentru o decizie informată.</p>
-        <div class="specs__image">
-          <img src="images/hero-produs.jpg" alt="Boxă Bluetooth cu microfon wireless și cutie originală">
-        </div>
+      <div class="specs__image">
+        <img src="images/fata-spate.jpg" alt="Boxă vedere din față cu panou de comandă și vedere din spate">
       </div>
-      <div class="specs__table-wrap">
+      <div class="specs__content">
+        <p class="section-eyebrow section-eyebrow--left">Specificații</p>
+        <h2 class="section-title section-title--left">Specificații tehnice</h2>
         <table class="specs__table">
           <tbody>
+            <tr><th>Model</th><td>ZQS6239XW</td></tr>
             <tr><th>Putere</th><td>40 W</td></tr>
             <tr><th>Înălțime</th><td>50 cm</td></tr>
             <tr><th>Lățime</th><td>21 cm</td></tr>
@@ -342,7 +259,6 @@
             <tr><th>Iluminare</th><td>LED RGB multicolor</td></tr>
             <tr><th>Baterie</th><td>Încorporată, reîncărcabilă</td></tr>
             <tr><th>Timp de încărcare</th><td>3–5 ore</td></tr>
-            <tr><th>Conținut pachet</th><td>1x Boxă, 1x Microfon wireless, 1x Cablu de încărcare</td></tr>
           </tbody>
         </table>
         <p class="specs__note">Specificații orientative furnizate de producător; pot exista mici variații.</p>
@@ -350,112 +266,109 @@
     </div>
   </section>
 
-  <!-- TESTIMONIALS PLACEHOLDER -->
+  <!-- PACKAGE CONTENTS -->
+  <section class="package">
+    <div class="container">
+      <p class="section-eyebrow">Conținut pachet</p>
+      <h2 class="section-title">Ce primești în pachet</h2>
+      <div class="package__card">
+        <ul class="package__list">
+          <li><span class="icon-check"><svg class="icon"><use href="#icon-check"></use></svg></span> Boxă portabilă cu 2 difuzoare</li>
+          <li><span class="icon-check"><svg class="icon"><use href="#icon-check"></use></svg></span> Microfon wireless</li>
+          <li><span class="icon-check"><svg class="icon"><use href="#icon-check"></use></svg></span> Cablu de încărcare</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
   <section class="reviews">
     <div class="container">
       <p class="section-eyebrow">Recenzii</p>
-      <h2 class="section-title">Ce spun clienții noștri</h2>
+      <h2 class="section-title">Recenzii clienți</h2>
+      <p class="reviews__summary">Fii primul care lasă o recenzie pentru această boxă.</p>
       <div class="reviews__grid">
         <article class="review-card review-card--frame">
-          <svg class="icon frame__icon" aria-hidden="true"><use href="#icon-message"></use></svg>
+          <span class="review-card__avatar"><svg class="icon" aria-hidden="true"><use href="#icon-message"></use></svg></span>
           <p>Recenzie în curând</p>
         </article>
         <article class="review-card review-card--frame">
-          <svg class="icon frame__icon" aria-hidden="true"><use href="#icon-message"></use></svg>
+          <span class="review-card__avatar"><svg class="icon" aria-hidden="true"><use href="#icon-message"></use></svg></span>
           <p>Recenzie în curând</p>
         </article>
         <article class="review-card review-card--frame">
-          <svg class="icon frame__icon" aria-hidden="true"><use href="#icon-message"></use></svg>
+          <span class="review-card__avatar"><svg class="icon" aria-hidden="true"><use href="#icon-message"></use></svg></span>
           <p>Recenzie în curând</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- FAQ -->
-  <section class="faq" id="faq">
+  <!-- HOW TO ORDER -->
+  <section class="steps">
     <div class="container">
-      <p class="section-eyebrow">Întrebări frecvente</p>
-      <h2 class="section-title">Tot ce trebuie să știi</h2>
-      <div class="accordion" id="accordion">
-        <div class="accordion__item">
-          <button class="accordion__trigger">
-            În cât timp ajunge comanda?
-            <span class="accordion__icon">+</span>
-          </button>
-          <div class="accordion__panel">
-            <p>Livrarea se face de obicei în 1-3 zile lucrătoare, în toată Moldova, prin curier rapid.</p>
-          </div>
-        </div>
-        <div class="accordion__item">
-          <button class="accordion__trigger">
-            Ce metode de plată acceptați?
-            <span class="accordion__icon">+</span>
-          </button>
-          <div class="accordion__panel">
-            <p>Poți plăti la primire, direct la curier, în momentul livrării coletului.</p>
-          </div>
-        </div>
-        <div class="accordion__item">
-          <button class="accordion__trigger">
-            Microfonul este inclus în preț?
-            <span class="accordion__icon">+</span>
-          </button>
-          <div class="accordion__panel">
-            <p>Da, microfonul wireless este inclus în pachet, alături de cablul de încărcare.</p>
-          </div>
-        </div>
-        <div class="accordion__item">
-          <button class="accordion__trigger">
-            Ce garanție are boxa?
-            <span class="accordion__icon">+</span>
-          </button>
-          <div class="accordion__panel">
-            <p>Produsul beneficiază de garanție, iar în cazul unei probleme poți returna sau schimba boxa.</p>
-          </div>
-        </div>
-        <div class="accordion__item">
-          <button class="accordion__trigger">
-            Pot returna produsul dacă nu îmi place?
-            <span class="accordion__icon">+</span>
-          </button>
-          <div class="accordion__panel">
-            <p>Da, ai dreptul la retur conform legislației în vigoare pentru comenzile online.</p>
-          </div>
-        </div>
+      <p class="section-eyebrow">Simplu</p>
+      <h2 class="section-title">Cum comanzi?</h2>
+      <div class="steps__grid">
+        <article class="step-card">
+          <span class="step-card__number">1</span>
+          <h3>Completezi formularul</h3>
+          <p>Nume, telefon, adresă</p>
+        </article>
+        <article class="step-card">
+          <span class="step-card__number">2</span>
+          <h3>Confirmăm comanda</h3>
+          <p>Te contactăm pentru confirmare</p>
+        </article>
+        <article class="step-card">
+          <span class="step-card__number">3</span>
+          <h3>Primești coletul</h3>
+          <p>Curier la ușă, 1–3 zile</p>
+        </article>
+        <article class="step-card">
+          <span class="step-card__number">4</span>
+          <h3>Plătești la livrare</h3>
+          <p>Verifici, apoi plătești</p>
+        </article>
       </div>
     </div>
   </section>
 
   <!-- ORDER / CONTACT -->
   <section class="order" id="comanda">
-    <div class="container order__grid">
-      <div class="order__info">
-        <p class="section-eyebrow section-eyebrow--light">Comandă acum</p>
-        <h2 class="section-title section-title--light">Profită de reducerea de 71%</h2>
-        <p class="order__text">Completează formularul și te contactăm pentru confirmarea comenzii. Plata se face la primire, la livrare.</p>
-        <div class="order__price">
-          <span class="order__price-now">799 lei</span>
-          <span class="order__price-old">2796 lei</span>
+    <div class="container">
+      <p class="section-eyebrow section-eyebrow--light">Stoc limitat</p>
+      <h2 class="section-title section-title--light">Comandă acum</h2>
+
+      <div class="order__card">
+        <div class="countdown" data-countdown>
+          <div class="countdown__unit"><span data-cd-hours>06</span><small>ore</small></div>
+          <div class="countdown__unit"><span data-cd-minutes>00</span><small>min</small></div>
+          <div class="countdown__unit"><span data-cd-seconds>00</span><small>sec</small></div>
         </div>
+        <div class="order__price">
+          <span class="order__price-old">2796 lei</span>
+          <span class="order__price-now">799 lei</span>
+        </div>
+
+        <form class="order__form" id="orderForm">
+          <label>
+            Nume
+            <input type="text" name="nume" placeholder="Numele tău" required>
+          </label>
+          <label>
+            Telefon
+            <input type="tel" name="telefon" placeholder="Ex: 069 123 456" required>
+          </label>
+          <label>
+            Adresă de livrare
+            <input type="text" name="adresa" placeholder="Oraș, stradă, număr">
+          </label>
+          <button type="submit" class="btn btn--primary btn--lg btn--block">Trimite comanda</button>
+          <p class="order__note"><svg class="icon icon--inline" aria-hidden="true"><use href="#icon-lock"></use></svg> Datele tale sunt confidențiale. Plătești doar la livrare.</p>
+          <p class="order__success" id="orderSuccess" hidden><svg class="icon icon--inline"><use href="#icon-check"></use></svg> Mulțumim! Comanda a fost înregistrată, te vom contacta în curând.</p>
+        </form>
       </div>
-      <form class="order__form" id="orderForm">
-        <label>
-          Nume și prenume
-          <input type="text" name="nume" placeholder="Ex: Ana Popescu" required>
-        </label>
-        <label>
-          Telefon
-          <input type="tel" name="telefon" placeholder="Ex: 07xx xxx xxx" required>
-        </label>
-        <label>
-          Adresă de livrare
-          <input type="text" name="adresa" placeholder="Oraș, stradă, număr">
-        </label>
-        <button type="submit" class="btn btn--primary btn--lg btn--block">Trimite comanda — 799 lei</button>
-        <p class="order__note">Apăsând butonul, ești de acord să fii contactat pentru confirmarea comenzii.</p>
-        <p class="order__success" id="orderSuccess" hidden><svg class="icon icon--inline"><use href="#icon-check"></use></svg> Mulțumim! Comanda a fost înregistrată, te vom contacta în curând.</p>
-      </form>
     </div>
   </section>
 
