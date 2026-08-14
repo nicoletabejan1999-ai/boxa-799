@@ -349,6 +349,23 @@ a { color: inherit; text-decoration: none; }
 .why-card__body h3 { margin: 0 0 8px; font-size: 1.1rem; }
 .why-card__body p { margin: 0; color: var(--text-muted); font-size: 0.9rem; }
 
+/* Lifestyle */
+.lifestyle { padding: 80px 0; background: var(--bg-alt); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.lifestyle__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.lifestyle__item {
+  margin: 0;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  aspect-ratio: 3 / 4;
+}
+.lifestyle__item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; }
+.lifestyle__item:hover img { transform: scale(1.04); }
+
 /* Video */
 .video-section { padding: 80px 0; background: var(--bg-alt); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 .video-frame {
@@ -606,7 +623,7 @@ a { color: inherit; text-decoration: none; }
 @media (max-width: 980px) {
   .hero__grid { grid-template-columns: 1fr; }
   .hero__media { order: -1; }
-  .why__grid, .steps__grid { grid-template-columns: repeat(2, 1fr); }
+  .why__grid, .steps__grid, .lifestyle__grid { grid-template-columns: repeat(2, 1fr); }
   .description__grid, .specs__grid { grid-template-columns: 1fr; }
   .description__media { order: -1; }
   .reviews__grid { grid-template-columns: 1fr; }
@@ -616,7 +633,7 @@ a { color: inherit; text-decoration: none; }
 
 @media (max-width: 600px) {
   .hero__info h1 { font-size: 2rem; }
-  .why__grid, .steps__grid { grid-template-columns: 1fr; }
+  .why__grid, .steps__grid, .lifestyle__grid { grid-template-columns: 1fr; }
   .offer-card { padding: 22px; }
   .countdown__unit { min-width: 54px; padding: 8px 10px; }
   .promo-bar p { font-size: 0.75rem; }
