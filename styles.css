@@ -288,7 +288,8 @@ a { color: inherit; text-decoration: none; }
   box-shadow: var(--shadow);
 }
 .hero__badge--round {
-  top: 20px;
+  top: auto;
+  bottom: 20px;
   left: auto;
   right: 20px;
   width: 76px;
